@@ -3,18 +3,14 @@
 /* ============================= */
 @font-face {
   font-family: 'Lato';
-  font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Lato';
-  font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'),
-       url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
 }
 
 /* ============================= */
@@ -23,28 +19,48 @@
 body {
   font-family: 'Lato', Georgia, "Times New Roman", serif;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.75;
   background-color: #ffffff;
   color: #222;
   margin: 0;
-  padding: 0;
 }
 
-/* Center container feel */
-table {
-  line-height: 1.6;
+/* ============================= */
+/*         LAYOUT                */
+/* ============================= */
+.container {
+  max-width: 860px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* Header layout */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.intro {
+  flex: 2;
+}
+
+.photo {
+  flex: 1;
+  text-align: center;
+}
+
+.photo img {
+  width: 180px;
+  border-radius: 50%;
 }
 
 /* ============================= */
 /*         TYPOGRAPHY            */
 /* ============================= */
-p {
-  margin-bottom: 12px;
-}
-
-h1, h2, h3 {
-  font-family: 'Lato', Georgia, serif;
-  color: #111;
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -52,8 +68,16 @@ h2 {
   font-weight: 700;
   border-bottom: 1px solid #ddd;
   padding-bottom: 6px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 35px;
+  margin-bottom: 18px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+.profile-text {
+  margin-bottom: 14px;
 }
 
 strong {
@@ -63,13 +87,17 @@ strong {
 /* ============================= */
 /*         LINKS                 */
 /* ============================= */
-a {
-  color: #1a4fa3; /* Academic blue */
-  text-decoration: none;
+.links {
+  margin-top: 10px;
 }
 
-a:hover {
-  color: #b22222; /* subtle red (like papers/highlight) */
+.links a {
+  margin-right: 15px;
+  color: #1a4fa3;
+}
+
+.links a:hover {
+  color: #b22222;
 }
 
 /* ============================= */
@@ -84,54 +112,44 @@ li {
 }
 
 /* ============================= */
-/*         IMAGES                */
+/*         CONTENT BLOCKS        */
 /* ============================= */
-img {
-  max-width: 100%;
-  border-radius: 6px;
+.block {
+  margin-bottom: 18px;
 }
 
-/* Profile image (keep circle) */
-img.profile {
-  border-radius: 50%;
+.project {
+  margin-bottom: 28px;
 }
 
-/* ============================= */
-/*     SECTION SPACING           */
-/* ============================= */
-td {
-  vertical-align: top;
+.project p {
+  margin-top: 6px;
 }
 
-/* ============================= */
-/*     RESEARCH BLOCK STYLE      */
-/* ============================= */
-tr[bgcolor="#ffffd0"] {
-  background-color: #f9f9f9; /* softer highlight */
+.sub {
+  color: #555;
+  font-size: 14px;
 }
 
 /* ============================= */
-/*     SUBTLE HOVER EFFECT       */
+/*         DIVIDER               */
 /* ============================= */
-tr:hover {
-  background-color: #f5f7fa;
-  transition: 0.2s;
+.divider {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #eee;
 }
 
 /* ============================= */
-/*     RESPONSIVENESS            */
+/*         RESPONSIVE            */
 /* ============================= */
 @media screen and (max-width: 768px) {
-  table {
-    width: 100% !important;
+  .header {
+    flex-direction: column;
+    text-align: center;
   }
 
-  td {
-    display: block;
-    width: 100% !important;
-  }
-
-  img {
-    margin-top: 10px;
+  .photo img {
+    width: 140px;
   }
 }
