@@ -1,79 +1,76 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Md. Irfan Hossain | Portfolio</title>
-    <meta name="author" content="Md. Irfan Hossain">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Md. Irfan Hossain</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<table style="width:100%;max-width:800px;margin:auto;">
-<tbody>
 
-<tr>
-<td>
+<div class="container">
 
-<!-- Header -->
-<table style="width:100%;">
-<tr>
-<td style="width:63%;padding:2.5%;">
-    <p style="text-align:center;">
-        <span style="font-size:26px;font-weight:bold;">Md. Irfan Hossain</span>
-    </p>
+<!-- ================= HEADER ================= -->
+<div class="header">
+    <div class="intro">
+        <h1>Md. Irfan Hossain</h1>
 
-    <p>
-        I am a Computer Science graduate from <strong>BRAC University</strong>. My research focuses on 
-        <strong>Deep Reinforcement Learning</strong>, <strong>Transformer-based models</strong>, and 
-        <strong>Machine Learning systems</strong>, with applications in portfolio optimization and 
-        computer vision.
-    </p>
+        <p>
+        Computer Science graduate from BRAC University with research in deep reinforcement learning 
+        and transformer-based models—including a thesis on Transformer-PPO for margin-constrained 
+        portfolio optimization and low-light image enhancement using hierarchical Vision Transformers.
+        </p>
 
-    <p>
-        I am actively seeking a <strong>fully funded Master's position</strong> in Machine Learning, 
-        Deep Learning, Reinforcement Learning, Large Language Models, or Multi-Agent Systems.
-    </p>
+        <p>
+        I am seeking a fully funded Master’s position in Machine Learning, Deep Learning, 
+        Reinforcement Learning, Large Language Models, or Multi-Agent Systems.
+        </p>
 
-    <p style="text-align:center;">
-        <a href="mailto:md.irfan.hossain1@g.bracu.ac.bd">Email</a> /
-        <a href="resume.pdf">CV</a> /
-        <a href="https://github.com/irfanhossain57">GitHub</a> /
-        <a href="https://www.linkedin.com/in/irfanhossain57/">LinkedIn</a>
-    </p>
-</td>
+        <div class="links">
+            <a href="mailto:md.irfan.hossain1@g.bracu.ac.bd">Email</a>
+            <a href="resume.pdf">CV</a>
+            <a href="https://github.com/irfanhossain57">GitHub</a>
+            <a href="https://www.linkedin.com/in/irfanhossain57/">LinkedIn</a>
+        </div>
+    </div>
 
-<td style="width:40%;padding:2.5%;">
-    <img src="images/dp.jpg" style="width:100%;border-radius:50%;">
-</td>
-</tr>
-</table>
+    <div class="photo">
+        <img src="images/dp.jpg" alt="profile">
+    </div>
+</div>
 
 <hr>
 
-<!-- Research Interests -->
+<!-- ================= RESEARCH INTERESTS ================= -->
+<section>
 <h2>Research Interests</h2>
 <ul>
-    <li>Machine Learning & Deep Learning</li>
+    <li>Machine Learning and Deep Learning</li>
     <li>Reinforcement Learning</li>
     <li>Large Language Models (LLMs)</li>
     <li>Natural Language Processing (NLP)</li>
-    <li>Computer Vision & Image Processing</li>
+    <li>Computer Vision and Image Processing</li>
     <li>Multi-Agent Systems</li>
 </ul>
+</section>
 
-<!-- Education -->
+<!-- ================= EDUCATION ================= -->
+<section>
 <h2>Education</h2>
+
 <p>
 <strong>BRAC University</strong><br>
-Bachelor of Science in Computer Science (Oct 2021 – Jan 2026)<br>
+B.Sc. in Computer Science (Oct 2021 – Jan 2026)<br>
 CGPA: 3.61/4.00 | Thesis: 4.00/4.00<br>
 Advanced Coursework CGPA: 3.76/4.00<br>
-Best consecutive semesters: 3.88/4.00<br><br>
+Best consecutive semesters (Summer 2024 – Summer 2025): 3.88/4.00
+</p>
 
-Key Coursework: Artificial Intelligence (A), Neural Networks (A-), Computer Vision (A), 
-Data Science (A-), Numerical Methods (A), Linear Algebra (A-), Probability & Statistics (A-), 
-Computer Architecture (A)
+<p>
+<strong>Key Coursework:</strong><br>
+Artificial Intelligence (A), Neural Networks (A-), Computer Vision (A), Data Science (A-), 
+Numerical Methods (A), Linear Algebra (A-), Probability & Statistics (A-), Computer Architecture (A)
 </p>
 
 <p>
@@ -81,81 +78,107 @@ Computer Architecture (A)
 HSC (Science), 2020<br>
 GPA: 5.00/5.00
 </p>
+</section>
 
-<!-- Research -->
+<!-- ================= RESEARCH ================= -->
+<section>
 <h2>Research & Projects</h2>
 
-<p>
-<strong>Optimising Margin-Based Portfolio Management through DRL</strong><br>
-Undergraduate Thesis<br>
-Developed a Transformer-based DRL framework using Multi-Head Attention within PPO for 
-portfolio optimization. Integrated realistic margin constraints and multi-objective reward 
-functions. Achieved strong risk-adjusted returns on Dow 30 data.
-</p>
+<div class="project">
+    <strong>Optimising Margin-Based Portfolio Management through Deep Reinforcement Learning</strong><br>
+    Undergraduate Thesis<br>
+    <p>
+    Engineered a Transformer-based DRL framework using Multi-Head Attention within PPO to perform 
+    temporal and cross-asset feature extraction. Integrated realistic margin constraints with 
+    multi-objective reward functions balancing profit and risk. Achieved strong risk-adjusted 
+    returns on Dow 30 historical data (2009–2020).
+    </p>
+</div>
 
-<p>
-<strong>Night Vision: Enhancement and Colorization</strong><br>
-Designed a hierarchical Vision Transformer (ViT-32 encoder) for low-light enhancement. 
-Built a 40k image dataset and achieved superior perceptual quality with a colorfulness score of 39.33.
-</p>
+<div class="project">
+    <strong>Night Vision: Footage Enhancement and Colorization</strong><br>
+    <p>
+    Designed a hierarchical Transformer model using a ViT-32 encoder and progressive decoder. 
+    Built a 40,000-image dataset and developed a composite loss function to enhance perceptual 
+    quality and color consistency. Achieved a colorfulness score of 39.33.
+    </p>
+</div>
 
-<p>
-<strong>MLP-PPO for Portfolio Optimization (Manuscript in Preparation)</strong><br>
-Targeting submission to ICAIF / ACL Trading Workshop.
-</p>
+<div class="project">
+    <strong>MLP-PPO for Margin-Constrained Portfolio Optimization</strong><br>
+    <p>
+    Manuscript in preparation targeting ICAIF or ACL Trading Workshop.
+    </p>
+</div>
 
-<p>
-<strong>All-in-One Booking System</strong><br>
-Flask, MongoDB, JavaScript<br>
-Developed a full-stack booking platform with REST APIs for hotels, transport, and user management.
-</p>
+<div class="project">
+    <strong>All-in-One Booking System</strong><br>
+    <p>
+    Developed a full-stack booking platform using Flask, MongoDB, and JavaScript. Implemented 
+    RESTful APIs for dynamic booking, user management, and admin control.
+    </p>
+</div>
 
-<!-- Experience -->
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section>
 <h2>Experience & Training</h2>
-<ul>
-<li><strong>Machine Learning & Deep Learning Trainee</strong>, BRAC University (2026)
-    <br>Built CNN, RNN, and Transformer models and deployed ML pipelines using Docker and MLflow.
-</li>
 
-<li><strong>Technical Mentor</strong>, Microsoft Learn Student Ambassadors (2023–2024)
-    <br>Conducted workshops and mentored students in AI and ML.
-</li>
-</ul>
+<p>
+<strong>Machine Learning & Deep Learning Trainee</strong> — BRAC University (2026)<br>
+Implemented CNN, RNN, and Transformer models. Built end-to-end ML pipelines using Docker and MLflow, 
+including training, evaluation, and deployment.
+</p>
 
-<!-- Skills -->
+<p>
+<strong>Technical Mentor</strong> — Microsoft Learn Student Ambassadors (2023–2024)<br>
+Conducted workshops on AI/ML and mentored students through structured learning programs.
+</p>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section>
 <h2>Technical Skills</h2>
+
 <p>
 <strong>Programming:</strong> Python, Java, C<br>
-<strong>AI/ML:</strong> PyTorch, TensorFlow, Scikit-learn<br>
-<strong>Deep Learning:</strong> CNN, RNN, LSTM, Transformers, GANs<br>
+<strong>Frameworks:</strong> PyTorch, TensorFlow, Scikit-learn<br>
+<strong>Deep Learning:</strong> CNNs, RNNs, LSTM, Transformers, GANs<br>
 <strong>Reinforcement Learning:</strong> PPO, DQN<br>
 <strong>Tools:</strong> Stable-Baselines3, Gymnasium, Docker, MLflow
 </p>
 
-<!-- Awards -->
+</section>
+
+<!-- ================= AWARDS ================= -->
+<section>
 <h2>Honors & Awards</h2>
 <ul>
 <li>Vice Chancellor’s Honour List (2×)</li>
 <li>Dean’s Honour List</li>
-<li>AWS AI/ML Scholarship (Amazon Web Services)</li>
+<li>AWS AI/ML Scholarship</li>
 <li>Qubit by Qubit Quantum Computing Scholarship</li>
 </ul>
+</section>
 
-<!-- Leadership -->
+<!-- ================= LEADERSHIP ================= -->
+<section>
 <h2>Leadership & Activities</h2>
 <ul>
 <li>Microsoft Learn Student Ambassador</li>
 <li>Aspire Leadership Program (Harvard Business School collaboration)</li>
 </ul>
+</section>
 
-<!-- References -->
+<!-- ================= REFERENCES ================= -->
+<section>
 <h2>References</h2>
 <p>Available upon request.</p>
+</section>
 
-</td>
-</tr>
+</div>
 
-</tbody>
-</table>
 </body>
 </html>
