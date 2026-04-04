@@ -13,18 +13,22 @@
 
 <!-- ================= HEADER ================= -->
 <div class="header">
+
     <div class="intro">
         <h1>Md. Irfan Hossain</h1>
 
-        <p>
-        Computer Science graduate from BRAC University with research in deep reinforcement learning 
-        and transformer-based models—including a thesis on Transformer-PPO for margin-constrained 
-        portfolio optimization and low-light image enhancement using hierarchical Vision Transformers.
+        <p class="profile-text">
+        Computer Science graduate from BRAC University with research in deep reinforcement learning and 
+        transformer-based models—including a thesis on Transformer-PPO for margin-constrained portfolio 
+        optimization and low-light image enhancement using hierarchical Vision Transformers. 
+        I have experience designing end-to-end machine learning pipelines and developing scalable AI systems 
+        using modern deep learning frameworks.
         </p>
 
-        <p>
-        I am seeking a fully funded Master’s position in Machine Learning, Deep Learning, 
-        Reinforcement Learning, Large Language Models, or Multi-Agent Systems.
+        <p class="profile-text">
+        I am seeking a fully funded Master’s position in Machine Learning, Deep Learning, Reinforcement Learning, 
+        Large Language Models, or Multi-Agent Systems, with the goal of contributing to impactful research 
+        in intelligent systems and real-world AI applications.
         </p>
 
         <div class="links">
@@ -38,9 +42,10 @@
     <div class="photo">
         <img src="images/dp.jpg" alt="profile">
     </div>
+
 </div>
 
-<hr>
+<hr class="divider">
 
 <!-- ================= RESEARCH INTERESTS ================= -->
 <section>
@@ -59,25 +64,25 @@
 <section>
 <h2>Education</h2>
 
-<p>
+<div class="block">
 <strong>BRAC University</strong><br>
 B.Sc. in Computer Science (Oct 2021 – Jan 2026)<br>
 CGPA: 3.61/4.00 | Thesis: 4.00/4.00<br>
 Advanced Coursework CGPA: 3.76/4.00<br>
 Best consecutive semesters (Summer 2024 – Summer 2025): 3.88/4.00
-</p>
+</div>
 
-<p>
+<div class="block">
 <strong>Key Coursework:</strong><br>
 Artificial Intelligence (A), Neural Networks (A-), Computer Vision (A), Data Science (A-), 
 Numerical Methods (A), Linear Algebra (A-), Probability & Statistics (A-), Computer Architecture (A)
-</p>
+</div>
 
-<p>
+<div class="block">
 <strong>St. Gregory’s High School & College</strong><br>
-HSC (Science), 2020<br>
-GPA: 5.00/5.00
-</p>
+HSC (Science), 2020 — GPA: 5.00/5.00
+</div>
+
 </section>
 
 <!-- ================= RESEARCH ================= -->
@@ -85,38 +90,41 @@ GPA: 5.00/5.00
 <h2>Research & Projects</h2>
 
 <div class="project">
-    <strong>Optimising Margin-Based Portfolio Management through Deep Reinforcement Learning</strong><br>
-    Undergraduate Thesis<br>
-    <p>
-    Engineered a Transformer-based DRL framework using Multi-Head Attention within PPO to perform 
-    temporal and cross-asset feature extraction. Integrated realistic margin constraints with 
-    multi-objective reward functions balancing profit and risk. Achieved strong risk-adjusted 
-    returns on Dow 30 historical data (2009–2020).
-    </p>
+<strong>Optimising Margin-Based Portfolio Management through Deep Reinforcement Learning</strong><br>
+<span class="sub">Undergraduate Thesis</span>
+<p>
+Engineered a Transformer-based DRL framework using Multi-Head Attention (8–16 heads) within a PPO 
+algorithm to perform temporal and cross-asset feature extraction for diversified trading strategies. 
+Integrated realistic margin-trading constraints, including dynamic leverage ratios and maintenance 
+requirements, into a custom environment with a multi-objective reward function balancing profit and risk. 
+Achieved superior backtested performance on Dow 30 historical data (2009–2020), delivering higher 
+risk-adjusted returns and reduced drawdowns compared to baseline methods.
+</p>
 </div>
 
 <div class="project">
-    <strong>Night Vision: Footage Enhancement and Colorization</strong><br>
-    <p>
-    Designed a hierarchical Transformer model using a ViT-32 encoder and progressive decoder. 
-    Built a 40,000-image dataset and developed a composite loss function to enhance perceptual 
-    quality and color consistency. Achieved a colorfulness score of 39.33.
-    </p>
+<strong>Night Vision: Footage Enhancement and Colorization using Hierarchical Transformer</strong>
+<p>
+Designed a hierarchical Transformer model combining a ViT-32 encoder with a progressive deconvolution 
+decoder to enhance and colorize low-light imagery while preserving semantic accuracy. Curated a 
+40,000-image dataset and developed a composite loss function to balance perceptual quality, color 
+consistency, and edge preservation. Achieved a superior colorfulness score of 39.33.
+</p>
 </div>
 
 <div class="project">
-    <strong>MLP-PPO for Margin-Constrained Portfolio Optimization</strong><br>
-    <p>
-    Manuscript in preparation targeting ICAIF or ACL Trading Workshop.
-    </p>
+<strong>MLP-PPO for Margin-Constrained Portfolio Optimization</strong>
+<p>
+Manuscript in preparation targeting submission to ICAIF or ACL Trading Workshop.
+</p>
 </div>
 
 <div class="project">
-    <strong>All-in-One Booking System</strong><br>
-    <p>
-    Developed a full-stack booking platform using Flask, MongoDB, and JavaScript. Implemented 
-    RESTful APIs for dynamic booking, user management, and admin control.
-    </p>
+<strong>All-in-One Booking System</strong>
+<p>
+Developed a full-stack booking platform using Flask, MongoDB, HTML/CSS, and JavaScript. 
+Implemented RESTful APIs enabling dynamic booking, user profile management, and admin control.
+</p>
 </div>
 
 </section>
@@ -125,16 +133,22 @@ GPA: 5.00/5.00
 <section>
 <h2>Experience & Training</h2>
 
+<div class="block">
+<strong>Machine Learning & Deep Learning Trainee</strong> — BRAC University (2026)
 <p>
-<strong>Machine Learning & Deep Learning Trainee</strong> — BRAC University (2026)<br>
-Implemented CNN, RNN, and Transformer models. Built end-to-end ML pipelines using Docker and MLflow, 
-including training, evaluation, and deployment.
+Implemented CNN, RNN, and Transformer-based models for structured and unstructured datasets. 
+Developed end-to-end ML pipelines including preprocessing, training, evaluation, and deployment 
+using Docker and MLflow.
 </p>
+</div>
 
+<div class="block">
+<strong>Technical Mentor</strong> — Microsoft Learn Student Ambassadors (2023–2024)
 <p>
-<strong>Technical Mentor</strong> — Microsoft Learn Student Ambassadors (2023–2024)<br>
-Conducted workshops on AI/ML and mentored students through structured learning programs.
+Designed and conducted workshops on machine learning and AI, simplifying complex concepts. 
+Mentored students and fostered collaborative learning environments.
 </p>
+</div>
 
 </section>
 
@@ -144,7 +158,7 @@ Conducted workshops on AI/ML and mentored students through structured learning p
 
 <p>
 <strong>Programming:</strong> Python, Java, C<br>
-<strong>Frameworks:</strong> PyTorch, TensorFlow, Scikit-learn<br>
+<strong>AI/ML:</strong> PyTorch, TensorFlow, Scikit-learn<br>
 <strong>Deep Learning:</strong> CNNs, RNNs, LSTM, Transformers, GANs<br>
 <strong>Reinforcement Learning:</strong> PPO, DQN<br>
 <strong>Tools:</strong> Stable-Baselines3, Gymnasium, Docker, MLflow
